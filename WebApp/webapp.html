@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sensor</title>
+    <link rel="icon" type="image/x-icon" href="/images/ico.ico"/>
+    <link rel="stylesheet" href="webapp.css">
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <img id="background" alt="background" src="images/Clouds-66.7s-1718px.svg"/>
+    <img id="on_background_sun" alt="background" src="images/sun-svgrepo-com.svg"/>
+    <img id="rain" alt="background" src="images/rain.png"/>
+        <div id="sensor_data" class="sensor_data">
+            <div class="data">
+                <h3 class="current_data">Sensor's Data</h3>
+                <div class="temp">
+                    <img alt="background" src="images/temperature.png"/>
+                    <a>Temperature:<span id="temperature"></span></a>
+                </div>
+                <div class="temp">
+                    <img alt="background" src="images/humidity.png"/>
+                    <a>Humidity:<span id="humidity"></span></a>
+                </div>
+                <div class="container">
+                    <div class="app-title">
+                        <p>Weather In Your City</p>
+                    </div>
+                    <div class="weather-container">
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+                        <div class="temperature-value">
+                            <p>- °<span>C</span></p>
+                        </div>
+                        <div class="weather_info">
+                            <div class="temperature-description">
+                                <p> - </p>
+                            </div>
+                            <div class="location">
+                                <p>-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script type="module" src="webapp.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
